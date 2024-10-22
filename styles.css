@@ -1,3 +1,85 @@
-h1 {
-    color: red;
+body {
+    margin: 0;
+    padding: 0;
+}
+.top-bar {
+    height: 56px;
+    max-height: 56px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+#menu {
+    height: 19px;
+}
+.menu-wrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.menu-wrapper:hover {
+background-color: rgba(0,0,0,0.1);
+}
+.left {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 18px;
+}
+.left a {
+    display: flex;
+    text-decoration: none;
+}
+.left a::after {
+    content: 'PL';
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 10px;
+    color: black;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    right: -5px;
+    top: -6px;
+}
+#logo {
+    height: 20px;
+}
+.input-wrapper {
+    border-radius: 50px;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    max-height: 40px;
+    align-items: center;
+    padding-left: 15px;
+    gap: 0;
+}
+.search {
+    height: 38px;
+    width: 484px;
+    font-family: Roboto;
+    border: none;
+    font-size: 16px;
+}
+.search:focus {
+    border: none;
+    outline: none;
+}
+#search-btn {
+    width: 64px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    padding: 0 15px;
+}
+#search-btn img {
+height: 24px;
 }
